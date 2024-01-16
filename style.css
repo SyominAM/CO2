@@ -1,0 +1,202 @@
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  color: green;
+  background-image: url("co2.jpg");
+  background-repeat: no-repeat;
+  font-size: 3.2rem;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.custom-select label {
+  padding: 0 10px;
+  font-size: 2.4rem;
+}
+
+select {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  font-size: 2rem;
+  border-radius: 20px;
+  padding: 0.5em 2em 0.5em 1em;
+  background: #ecf0f3;
+  color: #555;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+}
+.submit-btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 0px;
+  width: 300px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  text-align: center;
+  background: #00b36a;
+  transition: .2s;
+}
+
+.submit-btn:hover {
+  background: black;
+}
+.submit-btn:active {
+  background: black;
+}
+.form-div {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px 5px 5px 5px;
+  font-size: 1rem;
+}
+
+.custom-select {
+  position: relative;
+  background-color: #ecf0f3;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 0px 20px;
+  margin-right: 20px;
+}
+
+.custom-select label {
+  font-size: 1.2rem;
+}
+
+select {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  border-radius: 20px;
+  padding: 0.5em 2em 0.5em 1em;
+  background: #ecf0f3;
+  color: #555;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  background: black;
+  height: 100%;
+  width: 2rem;
+  pointer-events: none;
+
+}
+
+.custom-arrow::before,
+.custom-arrow::after {
+  --size: 0.5em;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-arrow::before {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid rgba(255, 255, 255, 0.5);
+  top: 30%;
+}
+
+.custom-arrow::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid rgba(255, 255, 255, 0.5);
+  top: 70%;
+
+}
+
+
+.custom-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  background: black;
+  height: 100%;
+  width: 2rem;
+  pointer-events: none;
+}
+
+.custom-arrow::before,
+.custom-arrow::after {
+  --size: 0.5em;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-arrow::before {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid rgba(255, 255, 255, 0.5);
+  top: 30%;
+}
+
+.custom-arrow::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid rgba(255, 255, 255, 0.5);
+  top: 70%;
+}
+
+.container {
+  width: 80%;
+  padding: 20px;
+  border-radius: 40px;
+  background: #ecf0f3;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 1rem; /* Увеличен размер шрифта для заголовка */
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.title img {
+  width: 100px;
+  display: inline;
+}
+
+.title p {
+  display: inline;
+}
+
+.form-div input {
+  border: none;
+  outline: none;
+  background: none;
+  color: #555;
+  padding: 10px 10px 10px 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.form-div label {
+  font-size: 1rem;
+}
+
+.members,
+.
