@@ -71,6 +71,10 @@ select {
   margin-right: 20px;
 }
 
+.smaller-font td, .smaller-font th {
+  font-size: 0.7em; /* Reduce font size by 50% */
+}
+
 .custom-select label {
   font-size: 1.2rem;
 }

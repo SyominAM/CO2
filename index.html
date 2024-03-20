@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- google fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto&display=swap"
+            rel="stylesheet"
     />
-    <!-- font awesome -->
     <link
-      rel="stylesheet"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
+            rel="stylesheet"
+            integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+            crossorigin="anonymous"
     />
-    <!-- css file -->
     <link rel="stylesheet" href="style.css" />
     <title>CO2 Calculator</title>
     <link rel="icon" href="static/icon.svg">
-  </head>
-  <body>
-    <div class="container" id="form-container">
-      <div class="title">
+</head>
+<body>
+<div class="container" id="form-container">
+    <div class="title">
         <img src="static/icon.svg" alt="">
         <p>CO<sub>2</sub> расчет выброса в атмосферу</p>
-      </div>
-
-      <div class="form-div">
-        <div class="custom-select">
-          <label for="select-state">Выберите транспорт:</label>
-          <select name="state" id="select-state"></select>
-          <span class="custom-arrow"></span>
-        </div>
-<br>
-        <div class="custom-select">
-          <label for="select-route">Выберите маршрут:</label>
-          <select name="route" id="select-route"></select>
-          <span class="custom-arrow"></span>
-        </div>
-        <br>
-        Выбросы отходов:
-        <p id="output-route"></p>
-        граммов
-        <br>
-        <br>
-        <button class="submit-btn" onclick="onSubmition()">Расчитать</button>
-      </div>
-
     </div>
 
-    <script src="app.js"></script>
-  </body>
+    <div class="form-div">
+        <div class="custom-select">
+            <label for="select-state">Выберите транспорт:</label>
+            <select name="state" id="select-state"></select>
+            <span class="custom-arrow"></span>
+        </div>
+    </div>
+
+    <h3>Выбросы CO2 по маршрутам</h3>
+
+    <table id="emissions-table" class="smaller-font">
+        <thead>
+        <tr>
+            <th>Транспорт</th>
+            <th>Маршрут</th>
+            <th>Расстояние (км)</th>
+            <th>Выбросы (грамм)</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <button id="download-button" class="submit-btn">Скачать данные</button>
+</div>
+
+<script src="app.js"></script>
+</body>
 </html>
